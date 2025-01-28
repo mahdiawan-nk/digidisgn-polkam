@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Medilab Bootstrap Template</title>
+    <title>Document Sign || {{ config('app.name') }}</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="{{ asset('') }}assets/img/favicon.png" rel="icon">
-    <link href="{{ asset('') }}assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ asset('logo.png') }}" rel="icon">
+    <link href="{{ asset('') }}logo.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -83,7 +83,7 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background pt-4">
 
-            <img src="{{ asset('') }}poltek-kampar-bg.jpg" alt="" data-aos="fade-in">
+            <img src="{{ asset('') }}bg-01.jpg" alt="" data-aos="fade-in">
 
             <div class="container position-relative">
 
@@ -120,8 +120,8 @@
                                 <li class="list-group-item d-flex justify-content-between align-items-start">
                                     <div class="ms-2 me-auto">
                                         <div class="fw-bold">Penanda Tangan</div>
-                                        {{ $data->penandaTangan->name }}
-                                        {{ $data->penandaTangan->jabatan->nama_jabatan }} Politeknik Kampar
+                                        {{ $data->validation_steps['0']['user']->name }} -
+                                        {{ $data->validation_steps['0']['user']->jabatan->jabatan->nama_jabatan }} Politeknik Kampar
                                     </div>
                                 </li>
                             </ul>
