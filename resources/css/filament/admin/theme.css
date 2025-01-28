@@ -1,0 +1,51 @@
+@import "/vendor/filament/filament/resources/css/theme.css";
+
+@config 'tailwind.config.js';
+
+@tailwind base;
+
+.fi-layout .fi-topbar nav {
+    background: #fb6d03;
+}
+
+.fi-layout aside,
+.fi-layout aside header {
+    @apply bg-green-700;
+}
+
+.fi-layout main {
+    /* background-image: url("/public/poltek-kampar-bg.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fi-sidebar-nav ul li div span {
+    @apply text-white;
+}
+
+.fi-sidebar-nav ul li a span {
+    @apply text-white;
+}
+
+.fi-sidebar-nav ul li .fi-sidebar-item-active a svg,
+.fi-sidebar-nav ul li .fi-sidebar-item-active a span {
+    @apply text-orange-400;
+}
+.fi-sidebar-nav ul li a:hover svg,
+.fi-sidebar-nav ul li a:hover span {
+    @apply text-orange-400;
+}
+.fi-sidebar-nav ul li svg {
+    @apply text-white;
+}
+
+.fi-sidebar-nav ul li a .fi-badge {
+    @apply bg-orange-400;
+}
+
+.fi-sidebar-nav ul li a:hover .fi-badge {
+    @apply bg-white;
+}
+.fi-sidebar-nav ul li .fi-sidebar-item-active a .fi-badge {
+    @apply bg-white;
+}
