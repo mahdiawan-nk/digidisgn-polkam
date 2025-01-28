@@ -25,7 +25,6 @@ class DocumentSignController extends Controller
                 abort(404);  // Mengembalikan halaman 404 jika surat tidak ditemukan
             }  
 
-            // return response()->json($dataSurat);
 
             // Lanjutkan dengan proses tanda tangan atau logika lainnya
             return view('document_sign', ['data' => $dataSurat]);
